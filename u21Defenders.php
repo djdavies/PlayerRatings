@@ -15,8 +15,14 @@ $queries = new Queries;
 		<div class="row">
 		    <div class="col-md-3"><?php require_once('leftBar.php');?></div>
 		    <div class="col-md-6">
-				<?php $queries->u21defenders(); ?>
-		    </div>
+		    	<div class="row">
+		    		<div class="col-md-12">
+						<center><h2>Defenders U21</h2></center>
+		    		</div>
+		    	</div>
+		    	<?php $queries->u21defenders(); ?>
+		    	<!-- main content goes here -->
+		</div>
 		    <div class="col-md-3"><?php require_once('rightBar.php');?></div>
 		</div>
 	</div>
@@ -26,4 +32,5 @@ $queries = new Queries;
 <script src="jquery/jquery-1.11.1.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="http://imsky.github.io/holder/holder.js"></script>
 </html>

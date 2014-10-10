@@ -15,8 +15,13 @@ $queries = new Queries;
 		<div class="row">
 		    <div class="col-md-3"><?php require_once('leftBar.php');?></div>
 		    <div class="col-md-6">
+		    	<div class="row">
+		    		<div class="col-md-12">
+						<?php var_dump($queries->listNewport()); ?>
+		    		</div>
+		    	</div>
 		    	<!-- main content goes here -->
-		    </div>
+		</div>
 		    <div class="col-md-3"><?php require_once('rightBar.php');?></div>
 		</div>
 	</div>

@@ -16,7 +16,9 @@ $queries = new Queries;
 		    <div class="col-md-3"><?php require_once('leftBar.php');?></div>
 		    <div class="col-md-6">
 		    	<?php
-		    		$queries->searchPlayer($_POST['search']);
+		    		echo "You searched for: " . $_POST['search'] . "<br>";
+		    		echo htmlspecialchars($queries->searchPlayer($_POST['search']));
+
 		    	?>
 		    </div>
 		    <div class="col-md-3"><?php require_once('rightBar.php');?></div>
