@@ -42,15 +42,17 @@
             </ul>
           </li>
         
-        <form class="navbar-form navbar-left" role="search">
+        <form class="navbar-form navbar-left" role="search"
+          method="POST"
+          action="searchPlayer.php"
+        >
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
+            <input type="text" name ="search" class="form-control" placeholder="Search">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
-          <!-- include login -->
-          <?php require_once('loginForm.php');?>
         </form>
-          
+          <!-- include login -->
+          <?php require_once('loginForm.php');?> 
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>

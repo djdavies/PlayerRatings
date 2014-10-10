@@ -7,19 +7,24 @@ $queries = new Queries;
 <html lang ="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>Player Ratings</title>
 </head>	
 <body>
 	<?php require_once('navigation.php'); ?>
 	
 	<div class="container">
 		<div class="row">
-		    <div class="col-md-3"><?php require_once('leftBar.php');?></div>
+		    <div class="col-md-3">
+		    		<?php require_once('leftBar.php');?>
+		    </div>
 		    <div class="col-md-6" style="min-height: 300px; background-color:green;">
 			    <strong><?php $queries->teamOfWeekDefenders();?>
 			    <?php $queries->teamOfWeekMidfielders();?>
 			    <?php $queries->teamOfWeekStrikers();?></strong>
 		    </div>
-		    <div class="col-md-3"><?php require_once('rightBar.php');?></div>
+		    <div class="col-md-3">
+		    	<?php require_once('rightBar.php');?>
+		    </div>
 		</div>
 	</div>
 </body>

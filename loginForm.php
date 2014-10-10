@@ -30,7 +30,9 @@ else{
 	method="POST"
 	action="RegistrationForm.php"
 	>
+	
 	<input type="submit" class="btn btn-default" value="Register" />
+	</form>
 	</span>
 
 </ul>

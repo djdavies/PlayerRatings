@@ -15,7 +15,7 @@ $queries = new Queries;
 		<div class="row">
 		    <div class="col-md-3"><?php require_once('leftBar.php');?></div>
 		    <div class="col-md-6">
-		    	Split navigation bar into columns
+				<?php $queries->u21defenders(); ?>
 		    </div>
 		    <div class="col-md-3"><?php require_once('rightBar.php');?></div>
 		</div>
